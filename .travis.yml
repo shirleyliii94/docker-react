@@ -12,10 +12,10 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: "us-east-2"
-    app: "frontend"
-    env: "Frontend-env"
+    app: "docker-react"
+    env: "Docker-react-env"
     bucket_name: "elasticbeanstalk-us-east-2-112543432448"
-    bucket_path: "frontend"
+    bucket_path: "docker-react"
     on:
         branch: master # means every time push code to master, time to deploy
     access_key_id: $AWS_ACCESS_KEY
